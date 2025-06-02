@@ -1,0 +1,113 @@
+﻿@page "/Company/List"
+@attribute [Authorize]
+@rendermode InteractiveAuto
+@inject ICompanyRepository CompanyRepository
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IConfiguration Configuration
+@inject ILocalStorageService LocalStorage
+@inject CompanyOnSelectedNotification Notification
+
+<PageTitle>
+    Empresa - Lista
+</PageTitle>
+<div class="card">
+    <div class="card-header align-items-center d-flex">
+        <h4 class="card-title mb-0 flex-grow-1">Empresas</h4>
+        <div class="flex-shrink-0">
+            <a href="/Company/Add" class="btn btn-primary btn-sm material-shadow-none">
+                <i class="ri-file-list-3-line align-middle"></i> Cadastrar
+            </a>
+        </div>
+    </div><!-- end card header -->
+
+    <div class="card-body">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Digite sua pesquisa" @bind="SearchWord">
+                    <button class="btn btn-outline-success material-shadow-none" type="button" @onclick="OnSearch">Pesquisar</button>
+                </div>
+            </div>
+        <div class="table-responsive mt-4" style="margin-left: -16px; margin-right: -16px;">
+            <table class="table table-borderless table-centered align-middle table-nowrap mb-0">
+                <thead class="text-muted table-light">
+                    <tr>
+                        <th scope="col">Nome fantasia</th>
+                        <th scope="col">CNPJ</th>
+                        <th scope="col">Endereço</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if(Paginated == null){
+                        <tr>
+                            <td colspan="4">Carregando...</td>
+                        </tr>
+                    }
+                    else if(Paginated.Items.Count == 0)
+                    {
+                        <tr>
+                            <td colspan="4">Nenhum registro!</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        @foreach(var item in Paginated.Items){
+                            <tr>
+                                <td>
+                                    @item.TradeName
+                                </td>
+                                <td>
+                                    @item.TaxId
+                                </td>
+                                <td>@item.Address</td>
+                                <td>
+                                    <button class="btn btn-sm btn-soft-success" @onclick="()=>SelectCompany(item)"><i class=" ri-arrow-right-line me-1"></i>Selecionar</button>
+                                    <a href="/Company/Edit/@item.Id" class="btn btn-sm btn-soft-info"><i class="ri-edit-line"></i></a>
+                                    <a href="/Company/Detail/@item.Id" class="btn btn-sm btn-soft-danger"><i class="ri-delete-bin-line"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+        <Pagination Paginated="@Paginated" OnPageChanged="@OnPageChanged"/>
+    </div>
+</div>
+
+@code {
+    private Guid ApplicationUserId;
+    private int PageIndex = 1;
+    private int PageSize;
+    private string SearchWord = string.Empty;
+
+    private PaginatedList<Company>? Paginated;
+
+    protected override async Task OnInitializedAsync()
+    {
+        PageSize = Configuration.GetValue<int>("Pagination:PageSize");
+        ApplicationUserId = (await AuthenticationHelper.GetAuthenticationUserIdAsync(AuthenticationStateProvider)).Value;
+        await LoadDataAsync();
+    }
+
+    private async Task OnSearch()
+    {
+        PageIndex = 1;
+        await LoadDataAsync();
+    }
+    private async Task OnPageChanged(int pageNumber)
+    {
+        PageIndex = pageNumber;
+        await LoadDataAsync();
+    }
+    private async Task LoadDataAsync()
+    {
+        Paginated = await CompanyRepository.GetAll(ApplicationUserId, PageIndex, PageSize, SearchWord);
+    }
+    private async Task SelectCompany(Company company)
+    {
+        await LocalStorage.SetItemAsync(AppConstants.LocalStorageCompany, company);
+
+        Notification.NotificationOnSelected();
+    }
+}

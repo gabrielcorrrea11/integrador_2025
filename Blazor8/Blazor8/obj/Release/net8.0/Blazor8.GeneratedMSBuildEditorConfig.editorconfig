@@ -1,0 +1,133 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Blazor8
+build_property.RootNamespace = Blazor8
+build_property.ProjectDir = C:\Users\Usuario\source\repos\NET8-Blazor\Blazor\Blazor8\Blazor8\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Usuario\source\repos\NET8-Blazor\Blazor\Blazor8\Blazor8
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Dashboard/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEYXNoYm9hcmRcRGFzaGJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Dashboard/Formulario/Form.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEYXNoYm9hcmRcRm9ybXVsYXJpb1xGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Dashboard/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEYXNoYm9hcmRcX0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Layout/EmptyLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRW1wdHlMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Alert.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBbGVydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Bind.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCaW5kLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Component.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Components/BoostrapCardHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb21wb25lbnRzXEJvb3N0cmFwQ2FyZEhlYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Components/BootstrapCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb21wb25lbnRzXEJvb3RzdHJhcENhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Components/InputString.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb21wb25lbnRzXElucHV0U3RyaW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/DependecyInjection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXBlbmRlY3lJbmplY3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Errors/404.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvcnNcNDA0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Event.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFdmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/FormData.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGb3JtRGF0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Profile/Layout/ProfileLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9maWxlXExheW91dFxQcm9maWxlTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Profile/ProfileDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9maWxlXFByb2ZpbGVEZXRhaWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Profile/SecurityDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9maWxlXFNlY3VyaXR5RGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Profile/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9maWxlXF9JbXBvcnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/RouterHub.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSb3V0ZXJIdWIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-2id7mgwilt
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-g7px5w96cm
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Blazor8/Blazor8/Components/Pages/Separation.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZXBhcmF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-5rk6slj1t6

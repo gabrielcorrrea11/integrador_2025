@@ -1,0 +1,62 @@
+﻿@page "/form/data"
+@rendermode InteractiveServer
+<h3>Formulário</h3>
+
+@if (Mensagem is not null)
+{
+    <div class="alert alert-info">
+        @Mensagem
+    </div>
+}
+@if (MensagemErro is not null)
+{
+    <div class="alert alert-danger">
+        @MensagemErro
+    </div>
+}
+@* OnSubmit="Acessar" *@
+<EditForm Model="Usuario" OnInvalidSubmit="ValidacaoErro" OnValidSubmit="EnviarDadosComValidacaoSucesso" FormName="login">
+
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="row">
+        <div class="col-12">
+            <label for="email">E-mail</label>
+            <InputText id="email" @bind-Value="Usuario.Email" class="form-control" />
+            <ValidationMessage For="()=>Usuario.Email" />
+        </div>
+        <div class="col-12">
+            <label for="senha">Senha</label>
+            <InputText type="password" id="senha" @bind-Value="Usuario.Senha" class="form-control" />
+            <ValidationMessage For="@(()=>Usuario.Senha)" />
+        </div>
+        <div class="col-12 mt-3">
+            <button type="submit" class="btn btn-outline-primary">Acessar</button>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    public string? Mensagem { get; set; }
+    public string? MensagemErro { get; set; }
+    private Usuario Usuario { get; set; } = new Usuario();
+
+    public void Acessar(EditContext context)
+    {
+        //TODO - Validar
+        if (context.Validate())
+        {
+            //TODO - Consultar DB | Consultar API
+            Mensagem = $"Acessando.....Email: {Usuario.Email} - Senha: {Usuario.Senha}";
+        }
+    }
+    public void EnviarDadosComValidacaoSucesso(EditContext context)
+    {
+        Mensagem = $"Dados enviados com sucesso. Validação OK.";
+    }
+    public void ValidacaoErro()
+    {
+        MensagemErro = "Validação com erro";
+    }
+}

@@ -1,0 +1,2 @@
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao\Gestao.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao\Gestao.Client\obj\Debug\net8.0\staticwebassets.build.json

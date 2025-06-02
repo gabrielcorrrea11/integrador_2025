@@ -1,0 +1,57 @@
+﻿@page "/Financial/{type}/Edit/{id:int}"
+@rendermode InteractiveServer
+
+@inject IJSRuntime JS
+@inject NavigationManager NavigationManager
+@inject IFinancialTransactionRepository FinancialTransactionRepository
+@inject IQueue Queue
+
+@if (Type is not null)
+{
+    <PageTitle>
+        @TypeFinancialTransactionToString.Converter(Type).ToUpper() - ATUALIZAR
+    </PageTitle>
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header align-items-center d-flex">
+                @if (Type is not null)
+                {
+                    <h4 class="card-title mb-0 flex-grow-1">Atualizar @TypeFinancialTransactionToString.Converter(Type)</h4>
+                }
+            </div>
+            <div class="card-body">
+                @if (FinancialTransaction is not null)
+                {
+                    <FinancialTransactionForm IsEditForm="@true" FinancialTransaction="FinancialTransaction" Type="@Type" OnSave="Save" />
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    [Parameter]
+    public string? Type { get; set; }
+
+    [Parameter]
+    public int Id { get; set; }
+    public FinancialTransaction FinancialTransaction { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        FinancialTransaction = (await FinancialTransactionRepository.Get(Id))!;
+    }
+    private async Task Save(FinancialTransaction financialTransaction)
+    {
+        await FinancialTransactionRepository.Update(financialTransaction);
+        Queue.QueueInvocableWithPayload<FinancialTransactionRepeatInvocable, FinancialTransaction>(financialTransaction);
+
+        await JS.InvokeVoidAsync("alert", "Registro salvo com sucesso! Caso tenha parcelas, o processamento pode demorar alguns segundos para acontecer.");
+
+        NavigationManager.NavigateTo($"/Financial/{Type}/List");
+    }
+}

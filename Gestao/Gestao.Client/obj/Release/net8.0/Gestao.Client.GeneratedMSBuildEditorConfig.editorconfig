@@ -1,0 +1,57 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = Gestao.Client
+build_property.RootNamespace = Gestao.Client
+build_property.ProjectDir = C:\Users\Usuario\source\repos\NET8-Blazor\Blazor\Gestao\Gestao.Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Usuario\source\repos\NET8-Blazor\Blazor\Gestao\Gestao.Client
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Gestao/Gestao.Client/Components/Pagination.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdpbmF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Gestao/Gestao.Client/Pages/Account/List.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Gestao/Gestao.Client/Pages/Auth.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Gestao/Gestao.Client/Pages/Category/List.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Gestao/Gestao.Client/Pages/Company/List.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVxMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Gestao/Gestao.Client/Pages/Financial/List.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmluYW5jaWFsXExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Gestao/Gestao.Client/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = UmVkaXJlY3RUb0xvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/source/repos/NET8-Blazor/Blazor/Gestao/Gestao.Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

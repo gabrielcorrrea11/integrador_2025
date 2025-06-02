@@ -1,0 +1,98 @@
+﻿@implements IDisposable
+
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+@inject ILocalStorageService LocalStorage
+@inject CompanyOnSelectedNotification Notification
+
+<ul class="navbar-nav" id="navbar-nav">
+    <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+    <li class="nav-item">
+        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+            <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards"> Painel </span>
+        </NavLink>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link menu-link" href="#sidebarRegisters" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+            <i class="ri-file-list-3-line"></i> <span data-key="t-registers"> Cadastro </span>
+        </a>
+        <div class="collapse menu-dropdown" id="sidebarRegisters">
+            <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/Company/List">
+                        Empresa
+                    </NavLink>
+                </li>
+                @if (hasCompanySelected)
+                {
+                    <li class="nav-item">
+                        <NavLink class="nav-link" href="/Account/List">
+                            Conta
+                        </NavLink>
+                    </li>
+
+                    <li class="nav-item">
+                        <NavLink class="nav-link" href="/Category/List">
+                            Categoria
+                        </NavLink>
+                    </li>
+                }
+
+            </ul>
+        </div>
+    </li>
+    @if (hasCompanySelected)
+    {
+        <li class="nav-item">
+            <a class="nav-link menu-link" href="#sidebarAccount" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
+                <i class="ri-money-dollar-circle-line"></i> <span data-key="t-account"> Contas</span>
+            </a>
+            <div class="collapse menu-dropdown" id="sidebarAccount">
+                <ul class="nav nav-sm flex-column">
+                    <li class="nav-item">
+                        <NavLink href="/Financial/Pay/List" class="nav-link" data-key="t-pay">Pagar</NavLink>
+                    </li>
+                    <li class="nav-item">
+                        <NavLink href="/Financial/Receive/List" class="nav-link" data-key="t-receive">Receber</NavLink>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    }
+</ul>
+
+
+
+@code {
+    private bool hasCompanySelected = false;
+    private string? currentUrl;
+
+    protected override void OnInitialized()
+    {
+        NavigationManager.LocationChanged += OnLocationChanged;
+        Notification.OnCompanySelected += OnCompanySelected;
+
+        currentUrl = NavigationManager.ToBaseRelativePath(NavigationManager.Uri);
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        hasCompanySelected = await LocalStorage.ContainKeyAsync(AppConstants.LocalStorageCompany);
+        StateHasChanged();
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        currentUrl = NavigationManager.ToBaseRelativePath(e.Location);
+        StateHasChanged();
+    }
+    private void OnCompanySelected()
+    {
+        hasCompanySelected = true;
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= OnLocationChanged;
+        Notification.OnCompanySelected -= OnCompanySelected;
+    }
+}

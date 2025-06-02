@@ -1,0 +1,49 @@
+﻿@page "/bind"
+@rendermode InteractiveServer
+@*
+    rendermode:
+    - None (Sem interatividade): Vázio
+    - Server: InteractiveServer
+    - WebAssembly: InteractiveWebAssembly
+    - Auto (Server > WebAssembly): InteractiveAuto
+*@
+<h3>Bind</h3>
+
+<div>
+    @*
+        Bind - One-Way (Unidirecional): { get;* }
+    *@
+    <p>@Texto</p>
+</div>
+
+<div>
+    @*
+        Bind - Two-Way (Bidirecional): { get;* set;* }
+    *@
+    <input @bind="Texto" class="form-control" />
+</div>
+
+<div class="mt-3">
+    <input @bind="Texto" @bind:event="oninput" class="form-control" />
+</div>
+<div class="mt-3">
+    <input @bind-value="Texto" @bind-value:event="oninput" class="form-control" />
+</div>
+
+<div class="mt-3">
+    <input @bind:get="Texto" @bind:set="(value)=> {Texto = value!;}" @bind:event="oninput" class="form-control" />
+</div>
+
+@*
+    Bind - Two-Way - Virtual*
+    (Não é recomendado)
+*@
+<div class="mt-3">
+    <input value="@Texto" @oninput="((e) => Texto = e.Value!.ToString()!)" class="form-control bg-success" />
+</div>
+
+
+
+@code {
+    private string Texto { get; set; } = "Eu sou um texto!";
+}

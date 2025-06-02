@@ -1,0 +1,13 @@
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao.Domain\bin\Debug\net8.0\Gestao.Domain.deps.json
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao.Domain\bin\Debug\net8.0\Gestao.Domain.dll
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao.Domain\bin\Debug\net8.0\Gestao.Domain.pdb
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao.Domain\obj\Debug\net8.0\Gestao.Domain.csproj.AssemblyReference.cache
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao.Domain\obj\Debug\net8.0\Gestao.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao.Domain\obj\Debug\net8.0\Gestao.Domain.AssemblyInfoInputs.cache
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao.Domain\obj\Debug\net8.0\Gestao.Domain.AssemblyInfo.cs
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao.Domain\obj\Debug\net8.0\Gestao.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao.Domain\obj\Debug\net8.0\Gestao.Domain.sourcelink.json
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao.Domain\obj\Debug\net8.0\Gestao.Domain.dll
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao.Domain\obj\Debug\net8.0\refint\Gestao.Domain.dll
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao.Domain\obj\Debug\net8.0\Gestao.Domain.pdb
+C:\Users\Usuario\Source\Repos\NET8-Blazor\Blazor\Gestao.Domain\obj\Debug\net8.0\ref\Gestao.Domain.dll

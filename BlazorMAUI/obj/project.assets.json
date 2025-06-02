@@ -1,0 +1,285 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-android": {},
+    "net8.0-ios": {},
+    "net8.0-maccatalyst": {},
+    "net8.0-windows10.0.19041": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net8.0-android": [
+      "Microsoft.AspNetCore.Components.WebView.Maui",
+      "Microsoft.Extensions.Logging.Debug >= 8.0.0",
+      "Microsoft.Maui.Controls",
+      "Microsoft.Maui.Controls.Compatibility"
+    ],
+    "net8.0-ios": [
+      "Microsoft.AspNetCore.Components.WebView.Maui",
+      "Microsoft.Extensions.Logging.Debug >= 8.0.0",
+      "Microsoft.Maui.Controls",
+      "Microsoft.Maui.Controls.Compatibility"
+    ],
+    "net8.0-maccatalyst": [
+      "Microsoft.AspNetCore.Components.WebView.Maui",
+      "Microsoft.Extensions.Logging.Debug >= 8.0.0",
+      "Microsoft.Maui.Controls",
+      "Microsoft.Maui.Controls.Compatibility"
+    ],
+    "net8.0-windows10.0.19041": [
+      "Microsoft.AspNetCore.Components.WebView.Maui",
+      "Microsoft.Extensions.Logging.Debug >= 8.0.0",
+      "Microsoft.Maui.Controls",
+      "Microsoft.Maui.Controls.Compatibility"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\NET8-Blazor\\Blazor\\BlazorMAUI\\BlazorMAUI.csproj",
+      "projectName": "BlazorMAUI",
+      "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\NET8-Blazor\\Blazor\\BlazorMAUI\\BlazorMAUI.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\NET8-Blazor\\Blazor\\BlazorMAUI\\obj\\",
+      "projectStyle": "PackageReference",
+      "crossTargeting": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-android",
+        "net8.0-ios",
+        "net8.0-maccatalyst",
+        "net8.0-windows10.0.19041.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-android": {
+          "targetAlias": "net8.0-android",
+          "projectReferences": {
+            "C:\\Users\\Usuario\\Source\\Repos\\NET8-Blazor\\Blazor\\BlazorLIB\\BlazorLIB.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\NET8-Blazor\\Blazor\\BlazorLIB\\BlazorLIB.csproj"
+            }
+          }
+        },
+        "net8.0-ios": {
+          "targetAlias": "net8.0-ios",
+          "projectReferences": {
+            "C:\\Users\\Usuario\\Source\\Repos\\NET8-Blazor\\Blazor\\BlazorLIB\\BlazorLIB.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\NET8-Blazor\\Blazor\\BlazorLIB\\BlazorLIB.csproj"
+            }
+          }
+        },
+        "net8.0-maccatalyst": {
+          "targetAlias": "net8.0-maccatalyst",
+          "projectReferences": {
+            "C:\\Users\\Usuario\\Source\\Repos\\NET8-Blazor\\Blazor\\BlazorLIB\\BlazorLIB.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\NET8-Blazor\\Blazor\\BlazorLIB\\BlazorLIB.csproj"
+            }
+          }
+        },
+        "net8.0-windows10.0.19041": {
+          "targetAlias": "net8.0-windows10.0.19041.0",
+          "projectReferences": {
+            "C:\\Users\\Usuario\\Source\\Repos\\NET8-Blazor\\Blazor\\BlazorLIB\\BlazorLIB.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\NET8-Blazor\\Blazor\\BlazorLIB\\BlazorLIB.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0-android": {
+        "targetAlias": "net8.0-android",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": {
+            "target": "Package",
+            "version": "(, )"
+          },
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "Microsoft.Maui.Controls": {
+            "target": "Package",
+            "version": "(, )"
+          },
+          "Microsoft.Maui.Controls.Compatibility": {
+            "target": "Package",
+            "version": "(, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+      },
+      "net8.0-ios": {
+        "targetAlias": "net8.0-ios",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": {
+            "target": "Package",
+            "version": "(, )"
+          },
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "Microsoft.Maui.Controls": {
+            "target": "Package",
+            "version": "(, )"
+          },
+          "Microsoft.Maui.Controls.Compatibility": {
+            "target": "Package",
+            "version": "(, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+      },
+      "net8.0-maccatalyst": {
+        "targetAlias": "net8.0-maccatalyst",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": {
+            "target": "Package",
+            "version": "(, )"
+          },
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "Microsoft.Maui.Controls": {
+            "target": "Package",
+            "version": "(, )"
+          },
+          "Microsoft.Maui.Controls.Compatibility": {
+            "target": "Package",
+            "version": "(, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+      },
+      "net8.0-windows10.0.19041": {
+        "targetAlias": "net8.0-windows10.0.19041.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": {
+            "target": "Package",
+            "version": "(, )"
+          },
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "Microsoft.Maui.Controls": {
+            "target": "Package",
+            "version": "(, )"
+          },
+          "Microsoft.Maui.Controls.Compatibility": {
+            "target": "Package",
+            "version": "(, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.Windows.SDK.NET.Ref",
+            "version": "[10.0.19041.57, 10.0.19041.57]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.Windows.SDK.NET.Ref.Windows": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1012",
+      "level": "Error",
+      "message": "A versão da plataforma não está presente para uma ou mais estruturas de destino, embora elas tenham uma plataforma especificada: net8.0-android, net8.0-ios, net8.0-maccatalyst"
+    }
+  ]
+}

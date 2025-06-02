@@ -1,0 +1,13 @@
+/*
+    CSS Isolation
+*/
+p[b-5rk6slj1t6] {
+    font-size: 10px;
+}
+
+/*
+    nav-item aplicado somente ao componente separation
+*/
+.nav-item[b-5rk6slj1t6] {
+    font-size: 10px !important;
+}
